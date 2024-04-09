@@ -6,7 +6,7 @@ This document provides a basic understanding of probability concepts relevant to
 
 Probability is a measure of the likelihood that an event will occur. It quantifies the uncertainty or randomness associated with a particular event. In the context of machine learning, understanding probability is crucial as it forms the basis for various algorithms and models.
 
-### Simple Example: Coin Toss
+#### Simple Example: Coin Toss
 
 Consider the simple example of tossing a fair coin. The possible outcomes are either heads (H) or tails (T). The probability of getting heads (P(H)) is 0.5, and the probability of getting tails (P(T)) is also 0.5. Here, each outcome is equally likely.
 
@@ -16,7 +16,7 @@ The complement of an event A, denoted by $A$' or $A^c$, represents all outcomes 
 
 **Example:**
 
-- Consider the event of getting a head when tossing a fair coin. The complement of this event (not getting a head) is getting tails. Thus, `P(not getting a head) = 1 - P(getting a head) = 1 - 0.5 = 0.5`.
+- Consider the event of getting a head when tossing a fair coin. The complement of this event (not getting a head) is getting tails. Thus, $P(not getting a head)$ = $1$ - $P(getting a head)$ = $1$ - $0.5$ = $0.5$
 
 ### Sum of Probabilities (Union and Intersection of Events)
 
