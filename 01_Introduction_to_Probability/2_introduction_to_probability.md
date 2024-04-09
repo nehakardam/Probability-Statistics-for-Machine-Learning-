@@ -72,7 +72,8 @@ The Naive Bayes classifier predicts the class label of a given instance by calcu
 
 If we have features $\( x_1, x_2, ..., x_n \)$, the class with the highest posterior probability given the features can be calculated as:
 
-$\[ \hat{y} = \text{argmax}_y \: P(y) \times \prod_{i=1}^{n} P(x_i|y) \]$
+$\hat{y} = \text{argmax}_y \: P(y) \times \prod_{i=1}^{n} P(x_i|y)$
+
 
 Where:
 - $\( \hat{y} \)$ is the predicted class label.
