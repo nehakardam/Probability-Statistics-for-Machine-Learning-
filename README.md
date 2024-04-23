@@ -14,7 +14,7 @@ The repository is divided into several sections, each covering different aspects
    - Understand basic probability concepts such as events, sample spaces, and probabilities.
    - Learn about complement of probability, sum of probabilities, and independence with examples.
 
-2. **Probability Distributions**:
+2. **Random Variables and Probability Distributions**:
    - Study common probability distributions including discrete and continuous distributions.
    - Learn about the Gaussian (Normal) distribution and its properties.
 
