@@ -10,7 +10,7 @@ Probability and statistics are fundamental pillars of machine learning. Understa
 
 The repository is divided into several sections, each covering different aspects of probability and statistics relevant to machine learning. Below is an overview of the repository:
 
-1. **Introduction to Probability**:
+1. [Introduction to Probability](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/blob/main/1_Intro_to_Probability.md)
    - Understand basic probability concepts such as events, sample spaces, and probabilities.
    - Learn about complement of probability, sum of probabilities, and independence with examples.
 
