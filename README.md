@@ -1,10 +1,10 @@
 # Probability and Statistics for Machine Learning
 
-Welcome to the Probability and Statistics for Machine Learning repository! This repository contains materials designed to understand key concepts in probability and statistics essential for machine learning.
+Welcome to the Probability and Statistics for Machine Learning repository! This repository contains materials designed to understand key concepts in probability and statistics essential for machine learning. A lot of content of this repository has been adapted from [Probability & Statistics for Machine Learning & Data Science course on Coursera](https://www.coursera.org/learn/machine-learning-probability-and-statistics?specialization=mathematics-for-machine-learning-and-data-science&utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER_mathematics-for-machine-learning-and-data-science_deeplearning-ai_FTCOF_specializations_country-US-country-CA&campaignid=20786981441&adgroupid=159481641007&device=c&keyword=&matchtype=&network=g&devicemodel=&adposition=&creativeid=681284608533&hide_mobile_promo&gad_source=1&gclid=CjwKCAjwuJ2xBhA3EiwAMVjkVNy12tIJP0nunVVQoJQ_yLZmxeORxLaLnGorE17DA-1Y9HF2PCPR-hoCWf8QAvD_BwE). 
 
 ## Introduction
 
-Probability and statistics are fundamental pillars of machine learning. Understanding these concepts is crucial for developing intuition, building models, and interpreting results. This repository aims to provide a comprehensive introduction to probability and statistics tailored for machine learning enthusiasts and practitioners.
+Probability and statistics are fundamental pillars of machine learning. Understanding these concepts is important for developing intuition, building models, and interpreting results. This repository provide a comprehensive introduction to probability and statistics tailored for machine learning enthusiasts and practitioners.
 
 ## Repository Structure
 
