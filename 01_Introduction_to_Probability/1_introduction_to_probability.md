@@ -1,10 +1,15 @@
-## Introduction to Probability
+## Introduction to Probability 
 
 This document provides a basic understanding of probability concepts relevant to machine learning.
 
 ### What is Probability?
 
-Probability is a measure of the likelihood that an event will occur. It quantifies the uncertainty or randomness associated with a particular event. In the context of machine learning, understanding probability is crucial as it forms the basis for various algorithms and models.
+Probability is a measure of the likelihood that an event will occur. It quantifies the uncertainty or randomness associated with a particular event. In the context of machine learning, understanding probability is crucial as it forms the basis for various algorithms and models. 
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/b914206a-1e9f-4a4f-b452-95f00bc18b8b)
+
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/78673069-9151-4525-bcfd-ada89cf4e948)
 
 #### Simple Example: Coin Toss
 
@@ -33,6 +38,33 @@ There are two main concepts related to combining probabilities of events:
   - As the events are mutually exclusive, $P(A \cup B)$ = P(A) + P(B) = $\frac{1}{2}$ + $\frac{1}{2}$ = $1$
   - The probability of the intersection of A and B ($P(A \cap B)$) is the probability of rolling an even number greater than 3, which is $P(A \cap B)$ = $\frac{1}{3}$.
 
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/818f3d39-e127-4b1a-8ea0-2182cdc154a1)
+
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/f2be9450-09d9-439b-a522-bd75cbda34ab)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/85701772-34df-4e13-aa30-455fc30152c7)
+
+### Disjoint Events vs Joint Events
+
+
+In probability theory, events are described as "join" or "disjoint" based on their relationship with each other.
+
+#### Joint Events:
+Joint events, also known as "simultaneous" or "dependent" events, are events that can occur at the same time or are related in some way.
+In simpler terms, joint events have outcomes that can happen together.
+For example, if we have two events A and B, the joint probability of both events occurring (denoted as P(A ∩ B)) represents the probability that both A and B occur simultaneously.
+
+#### Disjoint Events:
+Disjoint events, also known as "mutually exclusive" events, are events that cannot occur at the same time or have no outcomes in common.
+In other words, if one event happens, the other cannot happen at the same time.
+For example, if we have two events A and B, and they are disjoint, it means that P(A ∩ B) = 0, indicating that the events cannot occur simultaneously.
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/5317780b-62d4-431e-b8f8-6af36635c9e3)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/01272290-f9ed-4a5d-a075-52a69b2117b4)
+
+
 ### Independence of Events
 
 Two events A and B are said to be independent if the occurrence of one event does not affect the occurrence of the other. Mathematically, for independent events, $P(A \cap B)$ = $P(A) \times P(B)$.
@@ -40,6 +72,48 @@ Two events A and B are said to be independent if the occurrence of one event doe
 **Example:**
 
 - Consider tossing a fair coin and rolling a fair six-sided die. The outcomes of these two events are independent since the result of tossing the coin does not influence the result of rolling the die.
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/141fb7ad-c703-43a5-aa71-561a13ed6d2e)
+
+### Calculate Probability of Union of Multiple Events
+
+#### General Principles:
+- **Set Theory:** Events can be thought of as sets. The union (denoted by U) of two sets includes elements that belong to at least one of the sets, while the intersection (denoted by ∩) includes elements common to both sets.
+- **Probability Rules:** Two main rules exist depending on whether events are mutually exclusive (cannot occur together) or not:
+  - *Addition Rule (Mutually Exclusive Events):* When events cannot occur simultaneously, the probability of their union (A or B) is the sum of their individual probabilities (P(A) + P(B)).
+  - *General Addition Rule (Not Mutually Exclusive):* For events that can co-occur, we consider the probability of both happening (intersection). The probability of the union (A or B) is the sum of the individual probabilities minus the probability of their intersection (P(A) + P(B) - P(A ∩ B)).
+
+#### Key Points to Remember:
+- **Identify Independence:** Determine if events are mutually exclusive or not to apply the appropriate rule (addition or general addition).
+- **Conditional Probability:** In complex scenarios with multiple events, conditional probability (P(B|A)) might be necessary.
+
+#### Examples:
+- *Coin Flip (Mutually Exclusive):* Flipping heads (H) and tails (T) are mutually exclusive. P(H or T) = P(H) + P(T) = 1/2 + 1/2 = 1 (since one or the other must happen).
+- *Rolling a Die (Not Mutually Exclusive):* Getting a 2 (event A) and getting an even number (event B) are not mutually exclusive (both can happen). If P(A) = 1/6, P(B) = 3/6, and P(A ∩ B) = 1/6, then P(A or B) = P(A) + P(B) - P(A ∩ B) = 1/6 + 3/6 - 1/6 = 1/2.
+
+#### Additional Points:
+- Formulas exist for calculating probabilities of intersections of more than two events, with the core concept remaining the same.
+- Be ready to discuss conditional probability if the interview explores more complex scenarios.
+
+### Calculate Probability of Intersection of Multiple Events
+
+#### Product Rule for Independent Events:
+- This rule applies to independent events, where the occurrence of one event doesn't affect the probability of the other.
+- The probability of the intersection of multiple independent events (A, B, C...) happening together, denoted by P(A ∩ B ∩ C...), is the product of the individual probabilities of each event: P(A ∩ B ∩ C...) = P(A) * P(B) * P(C) * ...
+
+#### Key Points to Remember:
+- **Independence is Crucial:** The product rule holds true only for independent events. Dependent events require adjusting probabilities using conditional probabilities.
+- **Order Doesn't Matter:** The order of multiplying probabilities doesn't affect the final answer (commutative property).
+
+#### Examples:
+- *Flipping Coins (Independent):* Flipping two coins where A = heads on the first coin and B = heads on the second are independent events. P(A ∩ B) = P(A) * P(B) = 1/2 * 1/2 = 1/4.
+- *Rolling Dice (Not Independent):* Getting a specific number (e.g., A = 6) and getting an even number (B = even) are dependent events, as getting a 6 automatically fulfills the condition of getting an even number. In such cases, simple product rule cannot be used, and conditional probability is necessary.
+
+#### Additional Points:
+- The product rule extends to calculating the probability of intersections for more than three events by multiplying individual probabilities.
+- Understand the concept of independence and its critical role in using the product rule.
+
+  
 ### Conditional Probability
 
 Conditional probability is the probability of an event occurring given that another event has already occurred. It is denoted by \$( P(A|B)$ \), the probability of event A given event B. The formula for conditional probability is given by:
@@ -49,6 +123,28 @@ Conditional probability is the probability of an event occurring given that anot
 Where:
 - \$( P(A \cap B) \)$ is the probability of both events A and B occurring.
 - \$( P(B) \)$ is the probability of event B occurring.
+
+#### Key Points on When to Use Conditional Probability:
+
+- **Non-Independent Events:** The product rule (probability of intersections for independent events) cannot be directly applied to non-independent events. Conditional probability is crucial for these situations.
+- **Real-World Scenarios:** Many real-world events are not independent. Understanding conditional probability allows you to reason about these more nuanced situations.
+- **Refining Probability Based on New Information:** As you learn more about a situation (e.g., it rained), conditional probability helps update the probability of other events (muddy footprints) based on that new information.
+
+### Example with Medical Testing:
+
+- **Event A:** Having a disease.
+- **Event B:** Testing positive for the disease.
+   - A positive test result (B) is more likely if you actually have the disease (A). P(B|A) is high. However, a positive test result can also occur if you don't have the disease (false positive). P(B| not A) is lower than P(B|A).
+
+#### Conditional Probability Calculations:
+There are different formulas for calculating conditional probability depending on the context. However, the core idea is to consider the probability of the event of interest (B) happening given that another event (A) already occurred.
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/f4cb8a25-a16d-4fb0-ac88-faeadb2bb045)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/4715006b-27c9-4193-88bb-03a17997c62e)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/0c3c74e4-d817-4be1-9cf1-0ac8be361485)
+
 
 #### Example:
 
@@ -63,6 +159,16 @@ Using the conditional probability formula:
 $\[ P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{1}{13}}{\frac{3}{13}} = \frac{1}{3} \]$
 
 Thus, the probability of drawing a King given that the card drawn is a face card is $\( \frac{1}{3} \)$.
+
+### Profuct Rule (for Independent Events)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/ab58e32c-0aa3-44ab-92c1-ea91a7fa2415)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/2495e6dc-551e-46e6-ba8d-8f05ceae1ea3)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/909dfd0b-f5d9-43b2-8e18-c80720f1af34)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/41f29c7d-bd81-4275-8524-741d10e644eb)
 
 ### Bayes' Theorem
 
@@ -106,6 +212,13 @@ $\[ P(A|B) \approx 0.0196 \]$
 
 Thus, the probability that a person actually has the disease given that they tested positive is approximately 0.0196.
 
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/35588f31-23a1-46dc-b20d-5f773d3da508)
+
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/56d0ce4b-68d4-447f-b178-466ec996e888)
+
+
 ### Bayes' Theorem - Naive Bayes Model
 
 In machine learning, the Naive Bayes model is a probabilistic classification model based on Bayes' Theorem with the "naive" assumption of independence among features. Despite its simplicity, Naive Bayes often performs well in practice and is widely used for text classification, spam filtering, and other tasks.
@@ -134,4 +247,33 @@ $\[ P(\text{not spam}|x_1, x_2, ..., x_n) = \frac{P(\text{not spam}) \times \pro
 
 We select the class with the highest posterior probability as the predicted class label for the email.
 
+#### Naive Bayes Classifier:
+Despite the naive assumption, Naive Bayes is a surprisingly effective classification algorithm. It works by:
+1.	Learning the Probability Distribution: It learns the probability distribution of each feature for each class label.
+2.	Classification: When presented with a new data point (email), it calculates the probability of each class label given the values of the features in that data point. It then predicts the class with the highest probability.
+##### Benefits of Naive Bayes:
+- Simplicity: It's a relatively simple algorithm to understand and implement.
+- Efficiency: It requires less training data compared to some other algorithms.
+- Effectiveness: Despite the naive assumption, it can perform well in many real-world classification tasks.
+##### Limitations of Naive Bayes:
+- Feature Independence Assumption: The violation of the independence assumption can affect the accuracy of the classifier.
+- Naïve to Feature Relationships: It may not capture complex relationships between features.
 
+
+
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/792111e4-267a-46db-876c-c3d8faba594e)
+
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/32e2abdc-bbee-42b2-800e-d8f6bdaec460)
+
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/b17bb2ca-1837-410c-9737-a38957a8e0a6)
+
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/7dc6a08e-db8d-40df-9083-57e8b84696e6)
+
+
+
+
+### Reference: Pictures taken from  Probability & Statistics for Machine Learning & Data Science course on Coursera.
