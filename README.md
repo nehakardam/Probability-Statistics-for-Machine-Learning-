@@ -14,13 +14,13 @@ The repository is divided into several sections, each covering different aspects
    - Understand basic probability concepts such as events, sample spaces, and probabilities.
    - Learn about complement of probability, sum of probabilities, and independence with examples.
 
-2. **Descriptive Statistics**:
-   - Explore measures of central tendency, dispersion, and skewness.
-   - Understand histograms, box plots, and scatter plots for visualizing data distributions.
-
-3. **Probability Distributions**:
+2. **Probability Distributions**:
    - Study common probability distributions including discrete and continuous distributions.
    - Learn about the Gaussian (Normal) distribution and its properties.
+
+3. **Descriptive Statistics**:
+   - Explore measures of central tendency, dispersion, and skewness.
+   - Understand histograms, box plots, and scatter plots for visualizing data distributions.
 
 4. **Statistical Inference**:
    - Explore hypothesis testing and confidence intervals.
