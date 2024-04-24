@@ -2,8 +2,8 @@
 
 ### Explain what is Random Variables and Random Samples
 Random sampling and random variables are related concepts in statistics, but they deal with different things:
-- Random Variable: This is a variable whose value depends on the outcome of a random event. It basically assigns a numerical value to each possible outcome in an experiment. Imagine a coin toss - the random variable could be "Heads" (assigned a value of 1) or "Tails" (assigned a value of 0)
-- Random Sample: This refers to a subset of data points chosen from a larger population, where every element in the population has an equal chance of being selected. It's like picking names out of a hat - each name has an equal probability of being drawn. The size of the sample (number of data points) is usually denoted by "n".
+- ***Random Variable***: This is a variable whose value depends on the outcome of a random event. It basically assigns a numerical value to each possible outcome in an experiment. Imagine a coin toss - the random variable could be "Heads" (assigned a value of 1) or "Tails" (assigned a value of 0)
+- ***Random Sample***: This refers to a subset of data points chosen from a larger population, where every element in the population has an equal chance of being selected. It's like picking names out of a hat - each name has an equal probability of being drawn. The size of the sample (number of data points) is usually denoted by "n".
 
 #### Here's an analogy to understand the difference:
 - Think of a bag full of colored candies (population). A random variable could be the color you pick (red = 1, blue = 2, etc.).
