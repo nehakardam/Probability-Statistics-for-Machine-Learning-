@@ -2,13 +2,14 @@
 
 ### Explain what is Random Variables and Random Samples
 Random sampling and random variables are related concepts in statistics, but they deal with different things:
-•	Random Variable: This is a variable whose value depends on the outcome of a random event. It basically assigns a numerical value to each possible outcome in an experiment. Imagine a coin toss - the random variable could be "Heads" (assigned a value of 1) or "Tails" (assigned a value of 0).
-•	Random Sample: This refers to a subset of data points chosen from a larger population, where every element in the population has an equal chance of being selected. It's like picking names out of a hat - each name has an equal probability of being drawn. The size of the sample (number of data points) is usually denoted by "n".
-Here's an analogy to understand the difference:
-•	Think of a bag full of colored candies (population). A random variable could be the color you pick (red = 1, blue = 2, etc.).
-•	A random sample would be grabbing a handful of candies from the bag without looking (each candy has an equal chance of being chosen).
-Here's how they connect:
-•	We can use random variables to analyze random samples. For example, if we measure the weight of each candy we pick from the random sample (weight is the random variable), we can calculate the average weight of the candies in the sample (a statistic).
+- Random Variable: This is a variable whose value depends on the outcome of a random event. It basically assigns a numerical value to each possible outcome in an experiment. Imagine a coin toss - the random variable could be "Heads" (assigned a value of 1) or "Tails" (assigned a value of 0)
+- Random Sample: This refers to a subset of data points chosen from a larger population, where every element in the population has an equal chance of being selected. It's like picking names out of a hat - each name has an equal probability of being drawn. The size of the sample (number of data points) is usually denoted by "n".
+
+#### Here's an analogy to understand the difference:
+- Think of a bag full of colored candies (population). A random variable could be the color you pick (red = 1, blue = 2, etc.).
+- A random sample would be grabbing a handful of candies from the bag without looking (each candy has an equal chance of being chosen).
+#### Here's how they connect:
+- We can use random variables to analyze random samples. For example, if we measure the weight of each candy we pick from the random sample (weight is the random variable), we can calculate the average weight of the candies in the sample (a statistic).
 
 ![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/e1944af7-b630-4e01-ba5d-680a03a9570e)
 
