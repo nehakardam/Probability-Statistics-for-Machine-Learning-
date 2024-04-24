@@ -301,6 +301,17 @@ $\[ P(\text{not spam}|x_1, x_2, ..., x_n) = \frac{P(\text{not spam}) \times \pro
 
 We select the class with the highest posterior probability as the predicted class label for the email.
 
+## Comparison of Bayes' Theorem and Naive Bayes
+
+| Feature                 | Bayes' Theorem                                         | Naive Bayes                                                |
+|-------------------------|----------------------------------------------------------|--------------------------------------------------------------|
+| Purpose                 | Calculate probability of a hypothesis given evidence     | Classify data points into categories                        |
+| Formula                 | Uses Bayes' theorem for classification formula   | Uses Bayes' theorem for classification                     |
+| Assumptions             | No assumptions about independence                        | Assumes features are independent given the class label        |
+| Complexity              | More complex, can handle dependencies                   | Simpler, computationally efficient                             |
+| Applications             | Wider range, including spam filtering, medical diagnosis | Primarily classification tasks, often with text or categorical data |
+
+
 #### 13.1 Naive Bayes Classifier:
 Despite the naive assumption, Naive Bayes is a surprisingly effective classification algorithm. It works by:
 1.	Learning the Probability Distribution: It learns the probability distribution of each feature for each class label.
