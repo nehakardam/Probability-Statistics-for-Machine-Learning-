@@ -251,7 +251,6 @@ If a person tests positive, what is the probability that they actually have the 
 
 - Let A be the event that a person has the disease.
 - Let B be the event that a person tests positive.
-
 Given:
 - $\( P(A) = \frac{1}{10,000} \)$ (prior probability of having the disease)
 - $\( P(B|A) = 0.99 \)$ (likelihood of testing positive given that the person has the disease)
@@ -278,13 +277,11 @@ Thus, the probability that a person actually has the disease given that they tes
 
 ### 13. Bayes' Theorem - Naive Bayes Model
 
-In machine learning, the Naive Bayes model is a probabilistic classification model based on Bayes' Theorem with the "naive" assumption of independence among features. Despite its simplicity, Naive Bayes often performs well in practice and is widely used for text classification, spam filtering, and other tasks.
+In machine learning, the Naive Bayes model is a probabilistic classification model based on Bayes' Theorem with the ***"naive" assumption of independence among features.*** Despite its simplicity, Naive Bayes often performs well in practice and is widely used for text classification, spam filtering, and other tasks.
 
 The Naive Bayes classifier predicts the class label of a given instance by calculating the posterior probability of each class given the feature values and selecting the class with the highest probability.
 
 If we have features $\( x_1, x_2, ..., x_n \)$, the class with the highest posterior probability given the features can be calculated as:
-
-
 ![Screenshot 2024-04-08 at 11 11 25 PM](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/a79786e3-9116-48ea-8087-fe758d89a939)
 
 Where:
@@ -319,8 +316,6 @@ Despite the naive assumption, Naive Bayes is a surprisingly effective classifica
 - Naïve to Feature Relationships: It may not capture complex relationships between features.
 
 
-
-
 ![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/792111e4-267a-46db-876c-c3d8faba594e)
 
 
@@ -334,5 +329,4 @@ Despite the naive assumption, Naive Bayes is a surprisingly effective classifica
 
 
 
-
-### Reference: Pictures taken from  Probability & Statistics for Machine Learning & Data Science course on Coursera.
+#### Reference: Pictures taken from  Probability & Statistics for Machine Learning & Data Science course on Coursera.
