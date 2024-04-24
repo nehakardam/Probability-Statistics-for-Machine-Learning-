@@ -104,13 +104,6 @@ The probability of intersection of multiple events is defined as the probability
 
 In other words, in probability theory, the intersection of events refers to the scenario where all the considered events occur simultaneously. Calculating the probability of this intersection helps us determine how likely it is for multiple conditions to be met together.
 
-#### Key Concepts:
-
-- **Event:** An outcome or set of outcomes in a random experiment.
-- **Sample Space (S):** The collection of all possible outcomes in an experiment.
-- **Intersection (∩):** The symbol representing "and" in probability. It signifies the outcomes where all the intersecting events happen.
-- **Probability (P):** A numerical representation of the likelihood of an event occurring, ranging from 0 (impossible) to 1 (certain).
-
 #### Formula
 
 If events A and B are independent (the occurrence of one doesn't affect the probability of the other), the probability of their intersection (P(A ∩ B)) is calculated by multiplying their individual probabilities:
