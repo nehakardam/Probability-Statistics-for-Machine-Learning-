@@ -27,7 +27,17 @@ A probability distribution is a function that describes the probability of each 
 
 ### 2. What is Binomial Distribution?
 
- 
+The binomial distribution is a discrete probability distribution that models the number of successes in a fixed number of independent trials, each with a constant probability of success.
+
+***Properties:***
+- The binomial distribution is symmetric if p = 0.5 and asymmetric otherwise
+- The mean and variance of the binomial distribution are np and np(1-p), respectively
+
+***Common Applications:***
+- Modeling the number of heads in a series of coin tosses
+- Analyzing the number of defective products in a batch
+- Predicting the number of successes in a series of independent experiments
+
 ![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/0f72fc78-bede-4084-889b-4552267c2224)
 
 ![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/d7224738-77aa-4b7d-bf5a-eff1b3ffe9c2)
