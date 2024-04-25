@@ -14,9 +14,11 @@ The repository is divided into several sections, each covering different aspects
    - Understand basic probability concepts such as events, sample spaces, and probabilities.
    - Learn about complement of probability, sum of probabilities, and independence with examples.
 
-2. [Random Variables and Probability Distributions(some part of the topic material will be added soon..)](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/blob/main/2_randomvariables_probabilitydistribution.md)
+2. [Random Variables)](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/blob/main/2_randomvariables_probabilitydistribution.md)
    - Study common probability distributions including discrete and continuous distributions.
    - Learn about the Gaussian (Normal) distribution and its properties.
+  
+3. Probability Distributions(some part of the topic material will be added soon..)
 
 ### I will be adding material soon for below topics...
 
