@@ -1,6 +1,6 @@
 # Random Variable and Probability Distribution
 
-### Explain what is Random Variables and Random Samples
+### 1. Explain what is Random Variables and Random Samples
 Random sampling and random variables are related concepts in statistics, but they deal with different things:
 - ***Random Variable***: This is a variable whose value depends on the outcome of a random event. It basically assigns a numerical value to each possible outcome in an experiment. Imagine a coin toss - the random variable could be "Heads" (assigned a value of 1) or "Tails" (assigned a value of 0)
 - ***Random Sample***: This refers to a subset of data points chosen from a larger population, where every element in the population has an equal chance of being selected. It's like picking names out of a hat - each name has an equal probability of being drawn. The size of the sample (number of data points) is usually denoted by "n".
@@ -24,7 +24,7 @@ Random sampling and random variables are related concepts in statistics, but the
 ![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/e0b359b4-2971-4f09-8854-908fd55fe9ac)
 
 
-### Using Random Variables and Probability Distributions for Expected Value (with Example)
+### 2. Using Random Variables and Probability Distributions for Expected Value (with Example)
 
 Let's explore why random variables are useful with an example that uses math: expected value. Imagine you're running a lemonade stand, and the number of customers you get each day is uncertain (random).
 
@@ -64,7 +64,7 @@ By calculating the expected value of your customers (X), you can estimate your a
 
 This is a simplified example, but the concept of expected value using random variables is widely used in various fields, from finance (expected return on investments) to queuing theory (expected waiting time in line).
 
-### Explain the difference between independent and un-correlated random variables
+### 3. Explain the difference between independent and un-correlated random variables
 
 Independent and uncorrelated random variables are related concepts, but they have distinct meanings and implications in probability theory and statistics.
 
@@ -82,5 +82,117 @@ Independent and uncorrelated random variables are related concepts, but they hav
 
 In colclusion, the main difference between independent and uncorrelated random variables is that independence implies no relationship whatsoever between the variables, while uncorrelatedness specifically refers to the absence of a linear relationship between the variables but does not necessarily imply independence.
 
+ ### 4. What is the difference between Discrete and Continous Random Variables?
+
+#### Discrete Random Variables 
+Take on a countable number of distinct values (e.g., 0, 1, 2, ...)
+***Characteristics***
+* Have a finite or infinite number of possible outcomes
+* Probability is assigned to each specific value
+***Examples***
+* Number of heads in 5 coin tosses
+* Number of defective products in a batch
+
+#### Continuous Random Variables
+Can take on any value within a certain range or interval (e.g., 0 ≤ x ≤ 1)
+***Characteristics***
+* Have an uncountable number of possible outcomes
+* Probability is assigned to intervals or ranges of values
+***Examples***
+* Height of a person
+* Time until a component fails
+
+#### Key Differences
+***Number of possible outcomes***
+* Discrete variables: countable
+* Continuous variables: uncountable
+***Probability assignment***
+* Discrete variables: assign probability to specific values
+* Continuous variables: assign probability to intervals or ranges
+***Distribution functions***
+* Discrete variables: use probability mass functions (PMFs)
+* Continuous variables: use probability density functions (PDFs) and cumulative distribution functions (CDFs)
+ 
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/a6164125-a2e1-48f8-b795-26712d0ebf6a)
+
+![image](https://github.com/nehakardam/Probability-Statistics-for-Machine-Learning-/assets/70997776/0de0b4f1-febc-42b0-874e-bdd19f4ea79d)
+
+### 5. Explain Mean, Variance, and Covariance
+
+#### Mean
+
+* **Definition**: The mean, also known as the average, represents the central tendency of a dataset.
+* **Calculation**: Sum of all values divided by the number of values (n).
+* **Interpretation**: Provides a single number that summarizes the "middle" of the data.
+
+#### Variance
+
+* **Definition**: Measures how spread out the data is from the mean.
+* **Calculation**: Squared deviations from the mean, averaged and considering the sign.
+* **Relation to Expectation**: Calculates the average squared deviation from the expected value (the mean).
+* **Note**: Slight variations in calculation for sample vs. population.
+
+#### Expectation
+
+* **Definition**: Average value expected from a random variable or function of a random variable.
+* **Relation to Variance**: Variance calculates the average squared deviation from the expected value (the mean).
+
+#### Covariance
+
+* **Definition**: Measures the direction and strength of the linear relationship between two variables.
+* **Calculation**: Considers how much two variables tend to change together.
+* **Interpretation**:
+	+ Positive covariance: Variables tend to move in the same direction.
+	+ Negative covariance: Variables tend to move in opposite directions.
+* **Note**: Measured in units that are the product of the units of the two variables.
+
+#### Key Points
+
+* **Mean**: Central tendency.
+* **Variance**: Spread around the mean (uses squared deviations from the mean, related to expectation).
+* **Covariance**: Direction and strength of linear relationship between two variables.
+
+#### Example
+
+Analyzing student heights and test scores:
+
+* **Mean**: Average height and average test score.
+* **Variance**: Spread of student heights and scores from their respective means.
+* **Covariance**: Whether taller students tend to have higher scores (positive covariance) or shorter students tend to have higher scores (negative covariance).
+
+### 6. Explain expected value calculations for discrete random variables
+
+#### Expected Value (Mean) for Discrete Random Variables
+
+The expected value, also known as the mean (μ), represents the average value you expect to get if you were to repeat a random experiment a large number of times.
+It considers all possible outcomes of the experiment and their associated probabilities.
+
+***Formula:***
+The expected value for a discrete random variable X is calculated by summing the product of each possible value (x) of X and its corresponding probability (P(X=x)):
+E(X) = Σ(x * P(X=x)) for all possible values x
+
+#### Simple Probability Scenarios
+Here are some examples of expected value calculations in simple probability scenarios:
+
+***1. Coin Flip:***
+You flip a fair coin (heads or tails are equally likely).
+Possible outcomes (X): {heads, tails} with probability P(heads) = P(tails) = 1/2.
+Expected value (average outcome you expect from many flips):
+E(X) = (1 * 1/2) + (0 * 1/2) = 1/2 (heads get 1 point, tails get 0 points, so the average is halfway between).
+
+***2. Rolling a Die:***
+You roll a fair die with six sides (1 to 6).
+Possible outcomes (X): {1, 2, 3, 4, 5, 6} with equal probability P(x) = 1/6 for each side.
+Expected value (average roll you expect in many rolls):
+E(X) = (1 * 1/6) + (2 * 1/6) + (3 * 1/6) + (4 * 1/6) + (5 * 1/6) + (6 * 1/6) = 3.5
+
+***3. Picking a Card:***
+You pick a card from a standard deck of 52 cards without replacement.
+There are 4 aces (A).
+Possible outcomes (X): {number card, face card, ace} with probabilities depending on the specific question.
+
+***Example:*** What's the expected value of X if you get a point for aces and no points for others?
+P(ace) = 4/52, P(not ace) = 48/52
+E(X) = (1 * 4/52) + (0 * 48/52) = 1/13 (since only aces get points).
 
 
